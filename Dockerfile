@@ -7,7 +7,7 @@ WORKDIR /app
 
 COPY Gemfile Gemfile.lock /app/
 # RUN bundle install --without --development test
-RUN gem install rails bundler
+RUN bundle install
 
 ENV RAILS_ENV production
 ENV RACK_ENV production
