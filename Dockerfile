@@ -6,3 +6,5 @@ ADD Gemfile Gemfile.lock /app/
 RUN bundle install -j 8
 
 ADD . /app
+
+EXPOSE 3000
